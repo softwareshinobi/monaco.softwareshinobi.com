@@ -4,7 +4,7 @@ The Monaco Heist: A Terminal Text Adventure.
 
 !["The Monaco Heist: A Terminal Text Adventure"](cover.png)
 
-## Setting
+## Location
 
 A dimly lit briefing room. Rain lashes against the windows.
 
@@ -22,7 +22,7 @@ A Lambo? Sounds like my kind of night.
         
 #### Talon
 
-Don't get distracted, Whiplash. This isn't a joyride. Your first objective is to locate the credentials for the infiltration account.
+Don't get distracted, Whiplash. This isn't a joyride. Our first objective is to locate the credentials for the infiltration account.
 
 #### Director (Voiceover)
 
@@ -30,10 +30,24 @@ Your entry point is the west perimeter. Good luck. This mission is classified.
 
 Access the system as user 'monaco1'. The password is the username.
 
-## Access
+## Challenge
 
-ssh connect command:
+Terminal into level one (`monaco1`) of The Monaco Heist terminal games. The games are available only over the SSH protocol.
+
+## Action
+
+Connect to level 1 (`monaco1`) of the Monaco Heist terminal game using SSH.
+
+## Next Level 
+
+Get the password.
+
+Login here.
+
+ssh connection command:
 
 ```bash
 ssh -p 3547 monaco1@monaco.softwareshinobi.com
 ```
+
+Stay Frosty.

@@ -21,13 +21,13 @@ set -x;
 ## wargame / the monaco heist
 ##
 
-echo "proving grounds -> monaco heist -> starting..."
+echo "monaco heist -> user create..."
 
-cd monacoheist
+##cd monacoheist
 
-sudo bash install.bash
+sudo bash users.bash
 
-echo "proving grounds -> monaco heist -> installed."
+echo "monaco heist -> installed."
 
 ##
 

@@ -1,4 +1,4 @@
-FROM softwareshinobi/shinobi-academy-linux-server
+FROM softwareshinobi/linux.softwareshinobi.com:server
 
 ##
 

@@ -1,4 +1,4 @@
-# Home 
+# Home (legacy) 
 
 The Monaco Heist: A Terminal Text Adventure.
 

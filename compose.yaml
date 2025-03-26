@@ -1,15 +1,15 @@
 
 services:
 
-    linux.softwareshinobi.com-server:
+    he-monaco-heist-server:
         
-        container_name: linux.softwareshinobi.com-server
+        container_name: the-monaco-heist-server
 
-        image: softwareshinobi/linux.softwareshinobi.com:academy
+        image: softwareshinobi/the-monaco-heist:server
 
         build: 
 
-            context: servers/academy
+            context: server
 
             dockerfile: Dockerfile
 
@@ -21,11 +21,11 @@ services:
 
             - "2222:22"
 
-    linux.softwareshinobi.com-landing:
+    the-monaco-heist-docs:
 
-        container_name: linux.softwareshinobi.com-landing
+        container_name: the-monaco-heist-docs
 
-        image: softwareshinobi/linux.softwareshinobi.com:landing
+        image: softwareshinobi/the-monaco-heist:docs
 
         build: 
 

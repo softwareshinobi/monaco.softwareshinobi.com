@@ -1,12 +1,8 @@
 # Level 1 (monaco1): West Perimeter Breach (Rain-Soaked Wall)
 
-## Setting
+## Location
 
-The estate's high wall, drenched in rain. Thunder rumbles.
-
-## Challenge
-
-Find the password for the monaco2 user within perimeter_logs.txt.
+Verone's estate. The high wall. Drenched in rain. Thunder rumbles.
 
 ## Dialogue
 
@@ -22,17 +18,32 @@ Relax, Talon. I've seen tougher locks on a school locker. Check these logs. The 
 
 Got it. Next level, here we come.
 
-## Level Goal
+## Challenge
 
-        Player action: Use grep "password:" perimeter_logs.txt to find the password.
+The password for the next level is stored in a file called `perimeter_logs.txt` located in the home directory.
 
-The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
+## Action
 
+Find the password for the `monaco2` user within `perimeter_logs.txt`.
 
 ## Hints
 
-Commands you may need to solve this level
+Commands you may need to solve this level:
 
 ```
     ls , cd , cat , file , du , find
 ```
+
+## Next Level 
+
+Get the password.
+
+Login here.
+
+ssh connection command:
+
+```bash
+ssh -p 3547 monaco2@monaco.softwareshinobi.com
+```
+
+Stay Frosty.
