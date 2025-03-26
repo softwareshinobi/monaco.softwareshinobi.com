@@ -1,0 +1,24 @@
+services:
+
+    the-monaco-heist-docs:
+
+        container_name: the-monaco-heist-docs
+
+        image: softwareshinobi/the-monaco-heist:docs
+      
+        build: 
+
+            context: .
+
+            dockerfile: Dockerfile
+    
+        restart: unless-stopped
+            
+        ports:
+
+            - 8000:8000
+
+#        volumes:        
+#            - ./docs:/docs/docs            
+#            - ./mkdocs.yml:/docs/mkdocs.yml
+#

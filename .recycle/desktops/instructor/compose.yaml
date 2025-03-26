@@ -1,0 +1,63 @@
+services:
+
+##########################################
+##
+## software shinobi studio situation
+##
+##########################################
+
+    software-shinobi-desktop:
+
+        build: 
+
+            context: .
+
+            dockerfile: Dockerfile
+
+        container_name: software-shinobi-desktop
+
+        hostname: hyperion
+
+        image: softwareshinobi/software-shinobi-studio
+
+        restart: unless-stopped
+
+##        deploy:
+##
+##            resources:
+##
+##                limits:
+##
+##                    cpus: 2
+##
+##                    memory: 3.5G
+##
+##                reservations:
+##
+##                    cpus: 1
+##
+##                    memory: 2.0G
+
+        volumes:
+
+            - .volumes/desktop:/root
+
+        domainname: desktop.softwareshinobi.digital
+
+        environment:
+        
+            TZ: America/Bogota
+
+            USER_UID: 1000
+
+            USER_GID: 1000
+
+            USER: root
+
+            PASSWORD: passw0rd
+
+            HTTP_PASSWORD: passw0rd
+
+            VIRTUAL_HOST: desktop.softwareshinobi.digital
+
+            LETSENCRYPT_HOST: desktop.softwareshinobi.digital
