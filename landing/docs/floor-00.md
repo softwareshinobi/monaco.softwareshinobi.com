@@ -12,7 +12,7 @@ A dimly lit briefing room. Rain lashes against the windows.
 
 #### Director (Voiceover, static-laced)
 
-Operatives Whiplash and Talon, you're being deployed to Monaco. Carter Verona, owner of Monaco Motors, is suspected of funding illicit arms deals.
+Operatives Whiplash and Talon, you're being deployed to Monaco. Carter Verone, owner of Monaco Motors, is suspected of funding illicit arms deals.
 
 Your objective: retrieve the Lamborghini Aventador parked in his estate. It contains critical data. The storm will provide cover. Infiltration is paramount.
 
@@ -42,7 +42,7 @@ Connect to level 1 (`monaco1`) of the Monaco Heist terminal game using SSH.
 
 Get the password.
 
-Login here.
+Login to the next level.
 
 ssh connection command:
 

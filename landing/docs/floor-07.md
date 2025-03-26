@@ -1,13 +1,35 @@
-# Bandit Level 6 → Level 7
+# Level 7 (monaco7): Keycard Duplication (Hex Analysis)
 
-## Level Goal
+## Location
 
-The password for the next level is stored somewhere on the server and has all of the following properties:
+A keycard scanner, blinking erratically.
 
-* owned by user bandit7
-* owned by group bandit6
-* 33 bytes in size
+## Dialogue
 
-## Commands you may need to solve this level
+#### Whiplash
 
-    ls , cd , cat , file , du , find , grep
+We need a keycard to access the Aventador, and the next password.
+
+#### Talon
+
+Analyze the signal. The scanner's vulnerable. And look for the next access credentials.
+
+#### Whiplash
+
+Keycard duplicated. And we have the next password. Let's go.
+
+## Challenge
+
+Find the password for monaco8 within keycard.hex.
+
+## Action
+
+ Use strings keycard.hex | grep "password:" to find the password.
+
+## Next Level 
+
+Get the password. Login. 
+
+```bash
+ssh -p 3547 monaco8@monaco.softwareshinobi.com
+```

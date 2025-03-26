@@ -38,7 +38,7 @@ Commands you may need to solve this level:
 
 Get the password.
 
-Login here.
+Login to the next level.
 
 ssh connection command:
 

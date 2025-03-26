@@ -1,9 +1,27 @@
-# Bandit Level 9 → Top Floor
+# Level 10 (monaco10): Extraction (Stormy Coast)
 
-## Level Goal
+## Location
 
-The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
+The Monaco coastline, waves crashing against the rocks. A helicopter descends through the storm.
 
-## Commands you may need to solve this level
+## Dialogue
 
-    grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd
+#### Whiplash
+
+Extraction point in sight. Just need to signal them.
+
+#### Talon
+
+Transmit the confirmation signal. We're out of time. Read the extraction instructions.
+
+#### Director (Voiceover, clear)
+
+Extraction confirmed. Good work, operatives. Return to base.
+
+## Challenge
+
+Read extraction_instructions.txt to find the confirmation code.
+
+## Action
+
+Use cat extraction_instructions.txt to read the file.

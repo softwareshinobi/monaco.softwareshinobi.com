@@ -1,55 +1,38 @@
-# Home (legacy) 
+# Home
 
 The Monaco Heist: A Terminal Text Adventure.
 
 !["The Monaco Heist: A Terminal Text Adventure"](cover.png)
 
-## Pre Flight Checks:
+Alright, here's a description of the "Monaco Heist" wargame, tailored for your students, emphasizing the learning objectives and the engaging storyline:
 
-**(Scene: Inside a military transport plane soaring high above the French Riviera. Whiplash meticulously examines a blueprint, while Talon sharpens her combat knife.)**
+Welcome to the Monaco Heist!
 
-**Whiplash:** (Eyes glued to the blueprint) The target is on the top floor of the Monaco Intercontinental. We'll need to bypass security systems, crack codes, and maybe even deal with a few guards along the way.
+"Imagine you're part of an elite team of covert operatives, Whiplash and Talon, tasked with a high-stakes mission in the glamorous setting of Monaco. Your target: Carter Verona, a wealthy car dealership owner suspected of illicit activities. Your objective: infiltrate his heavily secured estate and retrieve a Lamborghini Aventador containing crucial intelligence.
 
-**Talon:** (Testing the edge of her knife) Sounds like a typical Tuesday for Team Six. Just another day at the office.
+This isn't just a car theft; it's a test of your Linux skills and problem-solving abilities. You'll be navigating a virtual environment, using real-world Linux commands to uncover hidden information, analyze security logs, and ultimately, gain access to the target vehicle.
 
-**Tech (voice crackles through the comms):** Gear up, team. We're approaching the drop zone. Get ready to make your entrance.
+Here's what you'll learn:
 
-**(The roar of the engines intensifies as the plane prepares to descend. A rush of adrenaline surges through Whiplash and Talon as they brace themselves for the jump.)**
+    Essential Linux Commands: You'll master fundamental commands for navigating the file system, searching for data, and analyzing text.
+    Data Extraction and Analysis: You'll learn how to extract specific information from log files, configuration files, and even encoded data.
+    Security Concepts: You'll get a taste of basic security principles, like understanding file permissions, network analysis, and data encryption.
+    Problem-Solving: Each level presents a unique challenge, requiring you to think critically and apply your knowledge to find the solution.
+    Real-World Scenarios: The wargame simulates real-world scenarios that system administrators and security professionals encounter daily.
 
-**Are you ready to join them on this thrilling heist?  Connect to Level 0 and let the adventure begin!**
+How it works:
 
-## Introduction
+    You'll connect to a remote Linux server via SSH, just like connecting to a real system.
+    Each level represents a stage of the heist, with a specific objective to complete.
+    You'll use read-only Linux commands to analyze data and find the password to the next level's user account.
+    Progress through the levels by extracting the correct passwords hidden within the files.
+    The final level will require you to signal for extraction, completing the heist.
 
-**Welcome, rookie, to Team Six's latest mission: infiltrate the penthouse of the infamous Mateo Montenegro and steal his prized possession - a top-of-the-line Lamborghini!**
+Remember:
 
-This is an interactive text-based adventure game, played entirely within your terminal window. You'll take on the role of Whiplash and Talon, an elite mercenary duo known for their digital infiltration and combat skills. 
+    This is a safe and controlled environment for you to practice your skills.
+    Focus on understanding the commands and how they work.
+    Don't be afraid to experiment and try different approaches.
+    Use the man pages! man [command] is your friend.
 
-## Gear Up and Get Connected:
-
-Before you embark on this daring heist, make sure you've got the necessary tools:
-
-* **A computer with a terminal emulator:** This is your command center, where you'll interact with the game's systems and solve puzzles. Popular terminal emulators include Terminal (macOS/Linux) and cmder (Windows).
-
-* **An SSH client:** This will allow you to connect securely to the remote server hosting the game. Most terminal emulators come with built-in SSH functionality.
-
-## Patch Into Level 0:
-
-Your mission begins at Level 0, the lobby of the Monaco Intercontinental Hotel.
-
-Here are your connection details:
-
-* **Server:** linux.softwareshinobi.com
-
-* **Port:** 3547
-
-* **Username:** monaco0
-
-* **Password:** monaco0
-
-This is the ssh command to type to connect to the proving grounds.
-
-```
-ssh -p 3547 monaco0@linux.softwareshinobi.com
-```
-
-**Once connected, use the `cd` command to navigate to the directory for Level 1 (/page-01) and get started on your first challenge!**
+Get ready to put your Linux skills to the test and become a master of the Monaco Heist! Good luck, operatives!"

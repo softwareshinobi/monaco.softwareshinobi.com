@@ -1,13 +1,35 @@
-# Bandit Level 8 → Level 9
+# Level 9 (monaco9): Escape Route Navigation (GPS Coordinates)
 
-## Level Goal
+## Location
 
-The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
+The Aventador's GPS, displaying a scrambled route.
 
-## Commands you may need to solve this level
+## Dialogue
 
-    grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd
+#### Talon
 
-## Helpful Reading Material
+The escape route's scrambled. We need to decode the GPS coordinates, and find the last password.
 
-* Piping and Redirection
+#### Whiplash
+
+I hate GPS. Just give me a map. And where is the last password?
+
+#### Talon
+
+Route plotted. And we have the last password. Let's move.
+
+## Challenge
+
+Find the password for monaco10 within route.gps.
+
+## Action
+
+Use grep "password:" route.gps to find the password.
+
+## Next Level 
+
+Get the password. Login. 
+
+```bash
+ssh -p 3547 monaco10@monaco.softwareshinobi.com
+```
