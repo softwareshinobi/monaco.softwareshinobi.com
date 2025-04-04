@@ -1,7 +1,7 @@
 
 services:
 
-    he-monaco-heist-server:
+    the-monaco-heist-server:
         
         container_name: the-monaco-heist-server
 
@@ -21,15 +21,15 @@ services:
 
             - "2222:22"
 
-    the-monaco-heist-docs:
+    the-monaco-heist-web:
 
-        container_name: the-monaco-heist-docs
+        container_name: the-monaco-heist-web
 
-        image: softwareshinobi/the-monaco-heist:docs
+        image: softwareshinobi/the-monaco-heist:web
 
         build: 
 
-            context: landing
+            context: web
 
             dockerfile: Dockerfile
 
