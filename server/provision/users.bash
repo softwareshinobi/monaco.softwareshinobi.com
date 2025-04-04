@@ -2,8 +2,8 @@
 
 echo "proving grounds -> monaco heist -> installed."
 
-sudo useradd -m -p 'monaco0' monaco0
-sudo useradd -m -p 'O9P7a1RxFM8O' monaco1
+##sudo useradd -m -p 'monaco0' monaco0
+sudo useradd -m -p 'monaco1' monaco1
 sudo useradd -m -p '4tkcctZAl1p4' monaco2
 sudo useradd -m -p 'iGO4ZZIkPn9W' monaco3
 sudo useradd -m -p 'leUjjGFPAXdd' monaco4
