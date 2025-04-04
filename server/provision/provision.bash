@@ -31,4 +31,12 @@ echo "monaco heist -> installed."
 
 ##
 
+cd monaco1
+
+bash create.bash
+
+cd ..
+
+##
+
 echo "fin."
