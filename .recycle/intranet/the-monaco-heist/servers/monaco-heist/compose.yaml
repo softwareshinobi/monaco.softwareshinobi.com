@@ -1,0 +1,23 @@
+services:
+
+    shinobi-academy-monaco-heist:
+
+        container_name: sshinobi-academy-monaco-heist
+
+        image: softwareshinobi/shinobi-academy-linux-server:monacoheist
+
+        build: 
+
+            context: .
+
+            dockerfile: Dockerfile
+
+        ports:
+
+            - 2222:22
+
+        environment:
+
+            VIRTUAL_HOST: linux.academy.softwareshinobi.digital
+
+            LETSENCRYPT_HOST: linux.academy.softwareshinobi.digital

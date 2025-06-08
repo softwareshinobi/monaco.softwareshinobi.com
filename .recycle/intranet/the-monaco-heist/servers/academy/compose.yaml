@@ -1,0 +1,23 @@
+services:
+
+    shinobi-academy-linux-server:
+
+        container_name: shinobi-academy-linux-server
+
+        image: softwareshinobi/shinobi-academy-linux-server:latest
+
+        build: 
+
+            context: .
+
+            dockerfile: Dockerfile
+
+        ports:
+
+            - 2222:22
+
+        environment:
+
+            VIRTUAL_HOST: linux.academy.softwareshinobi.digital
+
+            LETSENCRYPT_HOST: linux.academy.softwareshinobi.digital

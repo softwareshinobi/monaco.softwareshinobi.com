@@ -1,0 +1,1 @@
+reset;clear;mkdocs serve

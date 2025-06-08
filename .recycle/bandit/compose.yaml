@@ -1,0 +1,24 @@
+services:
+
+    shinobi-academy-linux-docs:
+
+        container_name: shinobi-academy-linux-docs
+
+        image: softwareshinobi/shinobi-academy-linux-docs
+      
+        build: 
+
+            context: .
+
+            dockerfile: Dockerfile
+    
+        restart: unless-stopped
+            
+        ports:
+
+            - 8000:8000
+
+#        volumes:        
+#            - ./docs:/docs/docs            
+#            - ./mkdocs.yml:/docs/mkdocs.yml
+#

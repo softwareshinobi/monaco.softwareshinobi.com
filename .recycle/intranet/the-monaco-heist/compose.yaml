@@ -1,0 +1,38 @@
+
+services:
+
+    linux.softwareshinobi.com-server:
+        
+        container_name: linux.softwareshinobi.com-server
+
+        image: softwareshinobi/linux.softwareshinobi.com:academy
+
+        build: 
+
+            context: servers/academy
+
+            dockerfile: Dockerfile
+
+        hostname: shinobilinux
+
+        domainname: linux.softwareshinobi.com
+
+        ports:
+
+            - "2222:22"
+
+    linux.softwareshinobi.com-landing:
+
+        container_name: linux.softwareshinobi.com-landing
+
+        image: softwareshinobi/linux.softwareshinobi.com:landing
+
+        build: 
+
+            context: landing
+
+            dockerfile: Dockerfile
+
+        ports:
+
+            - 2280:80

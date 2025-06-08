@@ -1,0 +1,119 @@
+services:
+
+##########################################
+##
+## reverse proxy and ssl things
+##
+##########################################
+
+    software-shinobi-proxy:
+
+        container_name: software-shinobi-proxy
+
+        hostname: hyperion
+        
+        image: nginxproxy/nginx-proxy
+
+        restart: unless-stopped
+
+        ports:
+
+            - 80:80
+
+            - 443:443
+
+        volumes:
+
+            - /var/run/docker.sock:/tmp/docker.sock:ro
+
+            - /var/docker/nginx/html:/usr/share/nginx/html
+
+            - /var/docker/nginx/certs:/etc/nginx/certs
+
+            - /var/docker/nginx/vhost:/etc/nginx/vhost.d
+
+        logging:
+
+            options:
+
+                max-size: "10m"
+
+                max-file: "3"
+
+    software-shinobi-letsencrypt:
+
+        container_name: software-shinobi-letsencrypt
+
+        image: jrcs/letsencrypt-nginx-proxy-companion
+
+        restart: unless-stopped
+
+        volumes_from:
+
+            - software-shinobi-proxy
+
+        volumes:
+
+            - /var/run/docker.sock:/var/run/docker.sock
+
+            - /var/docker/nginx/acme:/etc/acme.sh
+
+        environment:
+
+            DEFAULT_EMAIL: the.software.shinobi@gmail.com
+
+##########################################
+##
+## software shinobi studio situation
+##
+##########################################
+
+    software-shinobi-desktop:
+
+        container_name: software-shinobi-desktop
+
+        hostname: hyperion
+
+        image: softwareshinobi/software-shinobi-studio
+
+        restart: unless-stopped
+
+##        deploy:
+##
+##            resources:
+##
+##                limits:
+##
+##                    cpus: 2
+##
+##                    memory: 3.5G
+##
+##                reservations:
+##
+##                    cpus: 1
+##
+##                    memory: 2.0G
+
+        volumes:
+
+            - .volumes/desktop:/root
+
+        domainname: desktop.softwareshinobi.digital
+
+        environment:
+        
+            TZ: America/Bogota
+
+            USER_UID: 1000
+
+            USER_GID: 1000
+
+            USER: root
+
+            PASSWORD: passw0rd
+
+            HTTP_PASSWORD: passw0rd
+
+            VIRTUAL_HOST: desktop.softwareshinobi.digital
+
+            LETSENCRYPT_HOST: desktop.softwareshinobi.digital

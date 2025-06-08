@@ -1,0 +1,238 @@
+version: "3.8"
+
+services:
+
+    shinobi-academy-linux-public:
+        
+        build: 
+
+            context: servers/public
+
+            dockerfile: Dockerfile
+
+        container_name: shinobi-academy-linux-public
+
+        hostname: miura
+
+        image: softwareshinobi/shinobi-academy-linux:miura
+
+        domainname: sian.embanet.softwareshinobi.digital
+
+        ports:
+
+            - "2222:22"
+
+    shinobi-academy-linux-private:
+        
+        build: 
+
+            context: servers/private
+
+            dockerfile: Dockerfile
+
+        container_name: shinobi-academy-linux-private
+
+        hostname: veneno
+
+        image: softwareshinobi/shinobi-academy-linux:veneno
+
+        domainname: sian.embanet.softwareshinobi.digital
+
+        ports:
+
+            - "3333:22"
+
+    shinobi-academy-linux-landing:
+
+        container_name: shinobi-academy-linux-landing
+
+        image: softwareshinobi/shinobi-academy-linux-landing
+
+        build: 
+
+            context: landing
+
+            dockerfile: Dockerfile
+
+        ports:
+
+            - 8888:80
+
+#####
+
+
+
+##########################################
+##
+## software shinobi studio situation
+##
+##########################################
+
+    software-shinobi-desktop1:
+
+        build: 
+
+            context: desktops/studio
+
+            dockerfile: Dockerfile
+
+        container_name: software-shinobi-desktop1
+
+        hostname: hyperion
+
+        image: softwareshinobi/software-shinobi-desktop
+
+        restart: unless-stopped
+
+##        deploy:
+##
+##            resources:
+##
+##                limits:
+##
+##                    cpus: 2
+##
+##                    memory: 3.5G
+##
+##                reservations:
+##
+##                    cpus: 1
+##
+##                    memory: 2.0G
+
+        volumes:
+
+            - .volumes/desktop:/root
+
+        domainname: desktop.softwareshinobi.digital
+
+        environment:
+        
+            TZ: America/Bogota
+
+            USER_UID: 1000
+
+            USER_GID: 1000
+
+            USER: root
+
+            PASSWORD: passw0rd
+
+            HTTP_PASSWORD: passw0rd
+
+            VIRTUAL_HOST: desktop.softwareshinobi.digital
+
+            LETSENCRYPT_HOST: desktop.softwareshinobi.digital
+
+
+    software-shinobi-desktop2:
+
+        build: 
+
+            context: desktops/coding
+
+            dockerfile: Dockerfile
+
+        container_name: software-shinobi-desktop2
+
+        hostname: hyperion
+
+        image: softwareshinobi/software-shinobi-desktop
+
+        restart: unless-stopped
+
+##        deploy:
+##
+##            resources:
+##
+##                limits:
+##
+##                    cpus: 2
+##
+##                    memory: 3.5G
+##
+##                reservations:
+##
+##                    cpus: 1
+##
+##                    memory: 2.0G
+
+        volumes:
+
+            - .volumes/desktop2:/root
+
+        domainname: desktop.softwareshinobi.digital
+
+        environment:
+        
+            TZ: America/Bogota
+
+            USER_UID: 1000
+
+            USER_GID: 1000
+
+            USER: root
+
+            PASSWORD: passw0rd
+
+            HTTP_PASSWORD: passw0rd
+
+            VIRTUAL_HOST: desktop.softwareshinobi.digital
+
+            LETSENCRYPT_HOST: desktop.softwareshinobi.digital
+
+    software-shinobi-desktop3:
+
+        build: 
+
+            context: desktops/instructor
+
+            dockerfile: Dockerfile
+
+        container_name: software-shinobi-desktop3
+
+        hostname: hyperion
+
+        image: softwareshinobi/software-shinobi-desktop:instructor
+
+        restart: unless-stopped
+
+##        deploy:
+##
+##            resources:
+##
+##                limits:
+##
+##                    cpus: 2
+##
+##                    memory: 3.5G
+##
+##                reservations:
+##
+##                    cpus: 1
+##
+##                    memory: 2.0G
+
+        volumes:
+
+            - .volumes/desktop3:/root
+
+        domainname: desktop.softwareshinobi.digital
+
+        environment:
+        
+            TZ: America/Bogota
+
+            USER_UID: 1000
+
+            USER_GID: 1000
+
+            USER: root
+
+            PASSWORD: passw0rd
+
+            HTTP_PASSWORD: passw0rd
+
+            VIRTUAL_HOST: desktop.softwareshinobi.digital
+
+            LETSENCRYPT_HOST: desktop.softwareshinobi.digital
