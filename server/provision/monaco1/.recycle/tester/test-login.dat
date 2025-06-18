@@ -1,72 +1,0 @@
-Script started on 2022-02-19 07:07:08-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="66" LINES="32"]
-troyburney@TELESTO:~/software-shinobi/proving-grounds/user-creation-scripts/software-shinobi/user-creation-softwareshinobi/tester$ 
-troyburney@TELESTO:~/software-shinobi/proving-grounds/user-creation-scripts/software-shinobi/user-creation-softwareshinobi/tester$ r [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kr
-c]104[!p[?3;4l[4l>troyburney@TELESTO:~/software-shinobi/proving-grounds/user-creation-scripts/software-shinobi/user-creation-softwareshinobi/tester$ s h[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs sh -i test-login.dat test-login.dat [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K../
-create-linux-user-softwareshinobi.sh
-.git/
-.gitignore
-README.md
-ssh-into-user-account.sh
-ssh-keys/
-tester/
-troyburney@TELESTO:~/software-shinobi/proving-grounds/user-creation-scripts/software-shinobi/user-creation-softwareshinobi/tester$ ssh -i ../ssh--[Kid[K[K[K[K[K[K
-create-linux-user-softwareshinobi.sh
-.git/
-.gitignore
-README.md
-ssh-into-user-account.sh
-ssh-keys/
-tester/
-troyburney@TELESTO:~/software-shinobi/proving-grounds/user-creation-scripts/software-shinobi/user-creation-softwareshinobi/tester$ ssh -i ../
-create-linux-user-softwareshinobi.sh
-.git/
-.gitignore
-README.md
-ssh-into-user-account.sh
-ssh-keys/
-tester/
-troyburney@TELESTO:~/software-shinobi/proving-grounds/user-creation-scripts/software-shinobi/user-creation-softwareshinobi/tester$ ssh -i ../ssh-keys/id_rsa tonystark@code.softwareshinobi.com
-The authenticity of host 'code.softwareshinobi.com (35.211.0.5)' can't be established.
-ECDSA key fingerprint is SHA256:1BUH+8u0PahhiK4lS7iJys5v80/hZl/B3/g8LAxBRp4.
-Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-Warning: Permanently added 'code.softwareshinobi.com,35.211.0.5' (ECDSA) to the list of known hosts.
-X11 forwarding request failed on channel 0
-Welcome to Ubuntu 21.10 (GNU/Linux 5.13.0-1013-gcp x86_64)
-
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/advantage
-
- * Super-optimized for small spaces - read how we shrank the memory
-   footprint of MicroK8s to make it the smallest full K8s around.
-
-   https://ubuntu.com/blog/microk8s-memory-optimisation
-
-This system has been minimized by removing packages and content that are
-not required on a system that users do not log into.
-
-To restore this content, you can run the 'unminimize' command.
-
-2 updates can be applied immediately.
-1 of these updates is a standard security update.
-To see these additional updates run: apt list --upgradable
-
-
-The programs included with the Ubuntu system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
-applicable law.
-
-To run a command as administrator (user "root"), use "sudo <command>".
-See "man sudo_root" for details.
-
-[?2004h]0;tonystark@software-shinobi-developer-operations: ~[01;32mtonystark@software-shinobi-developer-operations[00m:[01;34m~[00m$ exit
-[?2004llogout
-Connection to code.softwareshinobi.com closed.
-troyburney@TELESTO:~/software-shinobi/proving-grounds/user-creation-scripts/software-shinobi/user-creation-softwareshinobi/tester$ e xit
-exit
-
-Script done on 2022-02-19 07:07:56-05:00 [COMMAND_EXIT_CODE="0"]

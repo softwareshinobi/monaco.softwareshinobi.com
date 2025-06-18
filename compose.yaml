@@ -13,13 +13,13 @@ services:
 
             dockerfile: Dockerfile
 
-        hostname: shinobilinux
+        hostname: essenza
 
-        domainname: linux.softwareshinobi.com
+        domainname: essenza.embanet.online
 
         ports:
 
-            - "2222:22"
+            - "3547:22"
 
     the-monaco-heist-web:
 
@@ -35,4 +35,4 @@ services:
 
         ports:
 
-            - 2280:80
+            - "3580:80"
