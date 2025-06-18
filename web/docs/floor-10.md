@@ -1,5 +1,7 @@
 # Level 10 (monaco10): Extraction (Stormy Coast)
 
+!["Extraction (Stormy Coast)"](/images/floor-10.png)
+
 ## Location
 
 The Monaco coastline, waves crashing against the rocks. A helicopter descends through the storm.
@@ -21,7 +23,3 @@ Extraction confirmed. Good work, operatives. Return to base.
 ## Challenge
 
 Read extraction_instructions.txt to find the confirmation code.
-
-## Action
-
-Use cat extraction_instructions.txt to read the file.

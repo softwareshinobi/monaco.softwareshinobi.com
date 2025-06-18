@@ -1,5 +1,7 @@
 # Level 6 (monaco6): Security Grid Disable (Firewall Rules Analysis)
 
+!["Escape Route Navigation (GPS Coordinates)"](/images/floor-06.png)
+
 ## Location
 
 A terminal displaying firewall rules. Thunder echoes.

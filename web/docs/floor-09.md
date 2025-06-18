@@ -1,5 +1,7 @@
 # Level 9 (monaco9): Escape Route Navigation (GPS Coordinates)
 
+!["Escape Route Navigation (GPS Coordinates)"](/images/floor-09.png)
+
 ## Location
 
 The Aventador's GPS, displaying a scrambled route.

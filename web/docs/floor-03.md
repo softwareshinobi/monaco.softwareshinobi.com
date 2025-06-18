@@ -1,20 +1,22 @@
 # Level 3 (monaco3): Garage Door Access (Encrypted Signal)
 
+!["Garage Door Access (Encrypted Signal)"](/images/floor-03.png)
+
 ## Location
 
 The garage door, a heavy steel barrier. The storm intensifies.
 
 ## Dialogue
 
-#### Whiplash
+### Whiplash
 
 The garage door's locked tight. We need the access code and the next access credentials.
 
-#### Talon
+### Talon
 
 I'm picking up an encrypted signal. It's our key and our next password.
 
-#### Whiplash
+### Whiplash
 
 Garage is open. And we have the next password. Let’s move fast
 
@@ -31,15 +33,15 @@ Use cat `garage_signal.txt | base64 -d` to decode the password.
 Commands you may need to solve this level:
 
 ```
-    man , base64 , sha1sum , md5
+man , base64 , sha1sum , md5
 ```
 
 ## Next Level 
 
-Get the password. Login. 
-
-command:
+Get the password and login to the next level. Command:
 
 ```bash
 ssh -p 3547 monaco4@monaco.softwareshinobi.com
 ```
+
+Stay frosty.

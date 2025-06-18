@@ -1,5 +1,7 @@
 # monaco motors
 
+!["The Monaco Heist"](cover.png)
+
 ## next time
 
 set /bin/bash as the users default

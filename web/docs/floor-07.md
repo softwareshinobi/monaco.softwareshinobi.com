@@ -1,5 +1,7 @@
 # Level 7 (monaco7): Keycard Duplication (Hex Analysis)
 
+!["Escape Route Navigation (GPS Coordinates)"](/images/floor-07.png)
+
 ## Location
 
 A keycard scanner, blinking erratically.

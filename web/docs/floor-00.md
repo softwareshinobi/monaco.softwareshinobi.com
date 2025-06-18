@@ -38,11 +38,7 @@ Connect to level 1 (`monaco1`) of the Monaco Heist terminal game using SSH.
 
 ## Next Level 
 
-Get the password.
-
-Login to the next level.
-
-ssh connection command:
+Get the password and login to the next level. Command:
 
 ```bash
 ssh -p 3547 monaco1@monaco.softwareshinobi.com

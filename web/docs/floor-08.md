@@ -1,5 +1,7 @@
 # Level 8 (monaco8): Aventador Start-Up (ECU Data Analysis)
 
+!["Escape Route Navigation (GPS Coordinates)"](/images/floor-08.png)
+
 ## Location
 
 Inside the Aventador, the engine silent. Lightning illuminates the interior.

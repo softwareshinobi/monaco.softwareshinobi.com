@@ -1,5 +1,7 @@
 # Level 5 (monaco5): Network Router Access (Port Scan Analysis)
 
+!["Escape Route Navigation (GPS Coordinates)"](/images/floor-05.png)
+
 ## Location
 
 The network router room, humming with activity. Rain pounds the roof.

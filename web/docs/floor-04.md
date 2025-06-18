@@ -1,20 +1,22 @@
 # Level 4 (monaco4): Alarm System Bypass (Timed Sequence)
 
+!["Alarm System Bypass (Timed Sequence)"](/images/floor-04.png)
+
 ## Location
 
 The alarm system control panel, flashing red lights. Lightning flashes.
 
 ## Dialogue
 
-#### Talon
+### Talon
 
 The alarm system is live. One wrong move, and we're compromised. And we need the next password.
 
-#### Whiplash
+### Whiplash
 
 Don't panic. I've got this. Just give me a second. I bet the next password is in the sequence data.
 
-#### Talon
+### Talon
 
 Alarm is disabled. Proceed with caution. And we have the next password.
 
@@ -28,9 +30,7 @@ Use grep "password:" alarm_sequence.txt to find the password.
 
 ## Next Level 
 
-Get the password. Login. 
-
-command:
+Get the password and login to the next level. Command:
 
 ```bash
 ssh -p 3547 monaco5@monaco.softwareshinobi.com
