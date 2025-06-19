@@ -14,4 +14,8 @@ cd ..
 
 ##
 
+cp bashrc.sh /etc/profile.d/
+
+ls -lha /etc/profile.d/
+
 echo "fin."

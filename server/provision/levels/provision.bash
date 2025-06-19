@@ -14,10 +14,11 @@ echo "## wargame / the monaco heist - Configuring Existing User Accounts ##"
 
 USERS_TO_CONFIGURE=(
 
+    "monaco0"
     "monaco1"
     "monaco2"
-    "monaco3"
- ##   "monaco4"
+#    "monaco3"
+##   "monaco4"
  ##   "monaco5"
  ##   "monaco6"
  ##   "monaco7"

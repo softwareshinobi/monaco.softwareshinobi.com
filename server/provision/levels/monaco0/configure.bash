@@ -2,9 +2,9 @@
 
 ##
 
-USERNAME="monaco3"
+USERNAME="monaco0"
 
-PASSWORD="monaco3"
+PASSWORD="monaco0"
 
 USER_HOME="/home/"$USERNAME
 
@@ -20,7 +20,7 @@ echo "NOTICE / User '$USERNAME' created with password '$PASSWORD' (set non-inter
 
 cd $USER_HOME
 
-touch iyrtitl
+touch iyrtitl2222
 
 cd ..
 

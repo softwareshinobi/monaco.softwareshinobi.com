@@ -30,18 +30,18 @@ Access the system as user 'monaco1'. The password is the username.
 
 ## Challenge
 
-Terminal into level one (`monaco1`) of The Monaco Heist terminal games. The games are available only over the SSH protocol.
+Terminal into level one (`monaco0`) of The Monaco Heist terminal games. The games are available only over the SSH protocol.
 
 ## Action
 
-Connect to level 1 (`monaco1`) of the Monaco Heist terminal game using SSH.
+Connect to level 0 (`monaco0`) of the Monaco Heist terminal game using SSH.
 
 ## Next Level 
 
 Get the password and login to the next level. Command:
 
 ```bash
-ssh -p 3547 monaco1@monaco.softwareshinobi.com
+ssh -p 3547 monaco0@monaco.softwareshinobi.com
 ```
 
 Stay Frosty.

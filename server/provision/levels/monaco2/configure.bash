@@ -2,9 +2,9 @@
 
 ##
 
-USERNAME="monaco1"
+USERNAME="monaco3"
 
-PASSWORD="monaco1"
+PASSWORD="monaco3"
 
 USER_HOME="/home/"$USERNAME
 
